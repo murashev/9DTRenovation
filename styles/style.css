@@ -10,7 +10,7 @@ body {
    font-size: 14px;
    color: #1A1A1A;
 }
-section, footer {
+section {
    padding: 100px 45px;
 }
 .header {
@@ -30,14 +30,23 @@ section, footer {
 .header .navbar .nav-link:hover {
    color: #2B6CA3;
 }
+.hero-slider{
+   width: 100%;
+   height: 91vh;
+   position: relative;
+}
+.hero-slider img{
+   object-fit: cover;
+   overflow: hidden;
+}
 .slogan {
-   background-image: url(.././src/images/bg/bg-main.png);
-   background-repeat: no-repeat; 
-   background-size: cover;
-   color: #FFFFFF;
-   line-height: 120%;
-   text-align: center;
-   /* padding: 180px 0; */
+   position: absolute;
+   z-index: 999;
+   background: black;
+   opacity: 50%;
+   padding: 5%;
+
+
 }
 
 .slogan .slogan-action {
@@ -47,6 +56,7 @@ section, footer {
 }
 .slogan .slogan-text {
    font-size: 44px;
+   color: white;
    /* padding-top: 20px; */
    /* padding-bottom: 20px; */
 }
@@ -59,18 +69,19 @@ section, footer {
    text-decoration: none;
 }
 .slogan-arrow{
-   display: flex;
-   justify-content: center;
-   aligh-items: center;
+   position: absolute;
    cursor: pointer;
-   margin: 110px auto;
+   margin: 0 auto;
+   right: 48%;
+   top: 80vh;
+   z-index: 999;
 }
 .services {
    background-color: #2B6CA3;
    color: #FFFFFF;
    line-height: 120%;
    text-align: center;
-   /* padding: 140px 0; */
+   padding: 140px 0;
 }
 .services .m-logo {
 margin: 0 auto -15px;
@@ -105,7 +116,7 @@ z-index: 0;
    color: #FFFFFF;
    line-height: 120%;
    text-align: center;
-   /* padding: 140px; */
+   padding: 140px;
 }
 .m-title-about {
    color: #FFDE11;
@@ -149,7 +160,7 @@ textarea {
 .m-btn {
    background-color: #FFDE11;
    color: #2a6ca4;
-   /* padding: 10px 30px; */
+   padding: 10px 30px;
    border: none;
 }
 .m-btn:hover {
@@ -157,6 +168,33 @@ textarea {
    color:#FFDE11;
 }
 
+footer {
+   padding: 100px 45px;
+}
 
+swiper-container {
+   width: 100%;
+   height: 100%;
+ }
+
+ swiper-slide {
+   text-align: center;
+   font-size: 18px;
+   background: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .swiper-button-next:after, .swiper-button-prev:after {
+   color: #FFDE11;
+ }
 
 
